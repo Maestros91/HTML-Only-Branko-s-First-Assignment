@@ -188,3 +188,15 @@ footer {
   color: #FEFDFF;
   letter-spacing: 0.05em;
 }
+
+/* =================== MEDIA QUERIES ==============*/
+@media (max-width: 768px) {
+
+  .main-header h1,
+  .main-header h3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
