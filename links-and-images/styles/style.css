@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ====================== CONTAINER =================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #FEFDFF;
+}
+
+/* ================== HEADER / NAV ==================== */
+header {
+  background: #5C9EAD;
+  padding: 0 1.5rem;
+  border-bottom: 3px solid #042A2B;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  color: #FEFDFF;
+  padding: 6px 14px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background: rgba(4, 42, 43, 0.25);
+  color: #FEFDFF;
+}
+
+nav a:first-child {
+  background: #042A2B;
+  color: #FEFDFF;
+}
+
+/* ============= MAIN ================== */
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  gap: 2rem;
+}
+
+/* ================== MAIN HEADER =================== */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid #5C9EAD;
+  padding-bottom: 1.5rem;
+}
+
+.main-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #042A2B;
+}
+
+.main-header h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #5C9EAD;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* ============= CARDS =================== */
+.main-hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.main-hero-top,
+.main-hero-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+  min-width: 220px;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.main-hero-top {
+  background: #FEFDFF;
+  border: 1.5px solid #5C9EAD;
+  border-top: 5px solid #5C9EAD;
+}
+
+.main-hero-bottom {
+  background: #FEFDFF;
+  border: 1.5px solid #042A2B;
+  border-top: 5px solid #042A2B;
+}
+
+.main-hero-top h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #042A2B;
+  letter-spacing: 0.03em;
+}
+
+.main-hero-bottom h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #042A2B;
+  letter-spacing: 0.03em;
+}
+
+.main-hero-top span,
+.main-hero-bottom span {
+  font-size: 12px;
+  color: #5C9EAD;
+  font-style: italic;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ================ BUTTONS =====================*/
+.main-hero-top a,
+.main-hero-bottom a {
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.main-hero-top a {
+  background: #B02E0C;
+  color: #FEFDFF;
+  border: 2px solid #8a2409;
+}
+
+.main-hero-bottom a {
+  background: #F0A202;
+  color: #042A2B;
+  border: 2px solid #b87c02;
+}
+
+.main-hero-top a:hover,
+.main-hero-bottom a:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* ================ FOOTER =================== */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: #042A2B;
+  border-top: 3px solid #5C9EAD;
+  font-size: 13px;
+  font-style: italic;
+  color: #FEFDFF;
+  letter-spacing: 0.05em;
+}
